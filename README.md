@@ -17,5 +17,18 @@ UOSec CTF Web Resources
 	* Check that your new virtual host is working by going to http://ec2-35-167-126-129.us-west-2.compute.amazonaws.com:<port number>
 	* If all is well, your index.php should be served :)
 
+# Adding a flag to the Database:
+	In the /var/www/_installation/ directory is a series of .sql files used to create and modify the database. To add a flag, you can use the 05-fill-challenges-table.sql file.
+
+	* The challenge flags and info is in the CTF.challenges database where each row has the following fields:
+		> UNIQUE int(11)	`chal_id`
+		> varchar(64)		`chal_name`
+		> int(11)		`chal_points`
+		> varchar(64)		`chal_flag`
+
+	* Edit the file to add an entry to the CTF.challenges database:
+		$ vim 05-fill-challenges-table.sql
+		$ 
+
 # Native Challenges: (/home/ubuntu/CTF_Challenges)
 
