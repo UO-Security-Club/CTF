@@ -5,16 +5,16 @@
 <?php
 	include_once("user_includes/accountInfo.php");
 ?>
-
+<link href="css/modal.css" rel = "stylesheet">
 <h1>Challenges:</h1>
 <body>
 <br>
 <h2>Native: (Whitebox Intro)</h2>
 <div>
+
 	<u><b>Challenge 1 (Buffer Overflow Vuln) : 10pts</b></u>
 	<p><u>Description:</u> This program is vulnerable to a simple buffer overflow. The goal here is to overwrite the <b>i</b> variable to a non-zero value</p>
-	<p>Connect to the program remotely with: nc 35.167.126.129 4444</p>
-
+	<p>Connect to the program remotely with: nc 35.167.126.129 4445</p>
 	<a href="images/exploit1_src_code.png">Source Code</a>
 	<form action="checkFlag.php" method="post" name="chal1">
 		<label for="chal1_flag">Enter Flag:</label>
@@ -109,7 +109,7 @@
         <u><b>Challenge 3 (Reflected XSS / Cookie Stealer) : 15pts</b></u>
         <p><u>Description:</u> During the previous exercise you were introduced to reflected XSS, in this challenge, you injected a script that was executed by the browser to generate a popup with the flag.  How can we leverage this? Notice, the last challenge uses a GET request, which means the request is displayed in the URL. One way to leverage a XSS exploit is by crafting a malicious link with our script embedded in the URL. In this challenge we will assume we have crafted and sent a malicious link to an unsuspecting admin. In return we have received the admin’s cookie, which we can use to send a request with his/her identity to access flag.php</p>
 
-	<br><p>Here's the admin's cookie, we stole it for you: PHPSESSID=nj5j66edntkkeo4pap603dl2s6</p>
+	<br><p>Here's the admin's cookie, we stole it for you: PHPSESSID=91u0v2dg3050iqfb5e9lcrjfm5</p>
         <a href="http://ec2-35-167-126-129.us-west-2.compute.amazonaws.com:5021/">Go to website</a>
         <form action="checkFlag.php" method="post" name="chal2">
                 <label for="web3_flag">Enter Flag:</label>
@@ -121,5 +121,6 @@
 </div>
 
 <br>
+<script src="js/modalScript.js"></script>
 </body>
 </html>

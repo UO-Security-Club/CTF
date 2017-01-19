@@ -1,18 +1,10 @@
 <?php
 session_start();
-echo "Welcome: ";
-if (isset($_SESSION['user_name'])) { 
-	$usr = $_SESSION['user_name'];
-} else {
-	$usr = "Guest";
-}
 
-echo $usr;
-
-if(strcmp($usr, "admin") == 0) {
-	echo " Congrats! The flag is: UOSEC_cookieMONsterrr";
+if ($_COOKIE['PHPSESSID'] == "91u0v2dg3050iqfb5e9lcrjfm5") {
+	echo "Welcome Admin,<br>Congrats! The flag is: UOSEC_cookieMONsterrr";
 } else {
-	echo "Sorry, no flag for you";
+	echo "<br>Sorry, no flag for you";
 }
 
 ?>
