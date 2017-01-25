@@ -224,11 +224,71 @@
   </div>
 
 </div>
+</div>
+<!-- Start Modal content -->
+<div>
+    <div id="WebChal4Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('WebChal4Modal'))" style="color:#FFFFFF;">&times;</span>
+    <div class="row">
+                <div class="col-lg-12">
+                   <h3> <u><b>Challenge 4 (Reflected XSS) : 15pts</b></u></h3>
+                   <br>
+    <p><u>Description:</u><br></p>
+    
+
+        <a href="http://ec2-35-167-126-129.us-west-2.compute.amazonaws.com:5031/">Go to website</a>
+        <form action="checkFlag.php" method="post" name="chal4">
+                <label for="web4_flag">Enter Flag:</label>
+                <input id="web4_flag" class="chals" type="text" name="flag" required />
+
+                <input type="submit" name="chal_flag" value="web4" />
+        </form>
+                </div>
+            </div>
+  </div>
+
+</div>
+
+<!-- Start Modal content -->
+<div>
+    <div id="WebChal5Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('WebChal5Modal'))" style="color:#FFFFFF;">&times;</span>
+    <div class="row">
+                <div class="col-lg-12">
+                   <h3> <u><b>Challenge 4 (Reflected XSS) : 15pts</b></u></h3>
+                   <br>
+    <p><u>Description:</u><br></p>
+
+
+        <a href="http://ec2-35-167-126-129.us-west-2.compute.amazonaws.com:5041/">Go to website</a>
+        <form action="checkFlag.php" method="post" name="chal5">
+                <label for="web5_flag">Enter Flag:</label>
+                <input id="web5_flag" class="chals" type="text" name="flag" required />
+
+                <input type="submit" name="chal_flag" value="web5" />
+        </form>
+                </div>
+            </div>
+  </div>
+
+</div>
+
+
+</div>
+
 <div id="WebChallengeButtons">
    
     <li><button id="WebChal1Btn" onclick="openModal(document.getElementById('WebChal1Modal'))">Challenge 1 (Basic Burp Suite / Poor Data Validation) : 10pts</button></li>
     <li><button id="WebChal2Btn" onclick="openModal(document.getElementById('WebChal2Modal'))">Challenge 2 (Reflected XSS) : 10pts</button></li>
     <li><button id="WebChal3Btn" onclick="openModal(document.getElementById('WebChal3Modal'))">Challenge 3 (Reflected XSS / Cookie Stealer) : 15pts</button></li>
+    <li><button id="WebChal4Btn" onclick="openModal(document.getElementById('WebChal4Modal'))">Challenge 4 (Reflected XSS) : 15pts</button></li>
+    <li><button id="WebChal5Btn" onclick="openModal(document.getElementById('WebChal5Modal'))">Challenge 5 (Stored XSS) : 15pts</button></li>
 </div>       
 
 </div>
