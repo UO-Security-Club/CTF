@@ -25,7 +25,7 @@ if( array_key_exists( "cookie", $_GET ) && $_GET[ 'cookie' ] != NULL ) {
 
 if (substr_compare($cookie_str, $_COOKIE['PHPSESSID'], 10, strlen($_COOKIE['PHPSESSID'])) == 0) {
 	echo "Recieved Cookie: ".$cookie_str;
-	echo "<br><br><b>Congrats, the flag is: UOSEC_filterR2hard";
+	//echo "<br><br><b>Congrats, the flag is: UOSEC_filterR2hard";
 } else {
 	exit("<br>You'll get the right cookie one day...");
 }

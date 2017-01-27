@@ -1,9 +1,11 @@
 var page = require('webpage').create();
-var host = "ec2-35-167-126-129.us-west-2.compute.amazonaws.com:5041";
-var url = "http://"+host+"/xss_tmp/cm9me8bo83d47ve6tc2d237p8qXSS-BOT.php";
-var timeout = 2000;
 var system = require('system');
 var args = system.args;
+var host = "ec2-35-167-126-129.us-west-2.compute.amazonaws.com:5041";
+var url = "http://"+host+"/xss_tmp/"+system.args[1];
+var timeout = 2000;
+//var system = require('system');
+//var args = system.args;
 
 if (args.length === 1) {
 	console.log('No args received');
@@ -11,18 +13,25 @@ if (args.length === 1) {
 	args.forEach(function(arg, i) {
 		console.log(i + ':' + arg);
 	});
-	seshID = system.args[1];
+	//seshID = system.args[1];
 }
 
-//phantom.clearCookies();
 phantom.addCookie({
-    'name': 'Flag',
-    'value': 'UOSEC_FLAG',
-    'domain': host,  
-    'path': '/',
-    'httponly': false
+	'name': 'Flag',
+	'value': 'CTF{44dc13922a2f0f7a59c5058703fae0b9}',
+	'domain': host,
+	'path': '/xss_tmp/om77mcedteb8848cq2d623pv93XSS-BOT.php',
+	'httponly': false
 });
- 
+
+//page.addCookie({
+//    'name': 'Flag',
+//    'value': 'UOSEC_FLAG',
+//    'domain': host,
+//    'path': '/',
+//    'httponly': false
+//});
+
 page.onNavigationRequested = function(url, type, willNavigate, main) {
     console.log("[URL] URL="+url);  
 };
