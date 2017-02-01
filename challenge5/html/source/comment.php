@@ -118,7 +118,8 @@ elseif(isset($_SESSION['Comments']) === false) {
         }
 }
 //append all comments stored in session var to $html. /index.php prints the $html var to the page when requests
-$html .= '<br><b>Comments:</b><br>';
+//$html .= '<div class="w3-container">';
+$html .= '<p><b>Comments:</b></p>';
 foreach($_SESSION['Comments'] as $key=>$value) {
         $html .= 'Post #'.$key.'<br><li>'.$value.'<br>';
 }

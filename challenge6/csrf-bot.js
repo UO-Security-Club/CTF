@@ -1,8 +1,8 @@
 var page = require('webpage').create();
 var system = require('system');
 var args = system.args;
-var host = "ctf.uosec.info:5041";
-var url = "http://"+host+"/xss_tmp/"+system.args[1]; //this arg directs the browser to the user's tmp file containing their comments
+var host = "ctf.uosec.info:5051";
+var url = "http://"+host+"/csrf_tmp/"+system.args[1]; //this arg directs the browser to the user's tmp file containing their comments
 var timeout = 2000;
 
 if (args.length === 1) {
@@ -37,6 +37,7 @@ page.onResourceTimeout = function(e) {
  
 page.open(url, function(status) {
     console.log("[INFO] rendered page");
+    //page.render(url);
     setTimeout(function(){
         phantom.exit();
     }, 1);
