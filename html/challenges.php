@@ -118,7 +118,7 @@
                               <br>
                               <p><u>Description:</u> Use your disassembler of choice to reverse engineer the binary file. Try to find the hidden functionality that prints the flag. <br>
                               You can download the binary file at the link below. Once you've found the hidden functionality, run it on netcat (nc) as specified below.</p>
-                              <p>Connect to the program remotely with: nc 35.167.126.129 4477</p>
+                              <p>Connect to the program remotely with: nc 35.160.19.245 4477</p>
 
                               <a href="https://drive.google.com/open?id=0BwRJUP-ZgBwsQ2xNVWMxdVN0QlU">Binary File</a>
                               <form action="checkFlag.php" method="post" name="chal1">
