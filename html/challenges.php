@@ -271,6 +271,43 @@
      <!-- End Web App Challenge Buttons -->
      <br>
 
+     <h2>Net: </h2>
+     <!-- Net Modals -->
+     <div>
+
+          <!-- Net Challenge 1 -->
+          <div id="NetChal1Modal" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NetChal1Modal'))" style="color:#FFFFFF;">&times;</span>
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <h3><u><b>Net Challenge 1 (Packet Sniffing and Port Scanning) : 10pts</b></u></h3>
+                              <br>
+                              <p><u>Description:</u> find the open ports from the range 7770-7780. There's a few of them but only one of them serves the flag.
+                              <br> Analyze packets for flag in app-layer data. The lecture notes in regards to this challenge can be found here:
+			      <br><a href="https://docs.google.com/document/d/1XV0SjeBxLNYmwUy4KnQDoiciEzFHubmGWw9-zWsqDfI/edit?usp=sharing">Lecture Notes</a>
+                              <br> Target IP is 35.160.19.245</p>
+
+                              <form action="checkFlag.php" method="post" name="chal1">
+                                   <label for="net1_flag">Enter Flag:</label>
+                                   <input id="net1_flag" class="chals" type="text" name="flag" required />
+                                   <input type="submit" name="chal_flag" value="net1" />
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+     <!-- End Net Modals -->
+     <!-- Net Challenge Buttons -->
+     <div id="NetChallengeButtons">
+          <li><button id="NetChal1Btn" onclick="openModal(document.getElementById('NetChal1Modal'))">Net Challenge 1: 10pts</button></li>
+     </div>
+     <!-- End Net Challenge Buttons -->
+     <br>
+
      <h2>Crypto (classical): </h2>
      <!-- Crypto Modals -->
      <div>
