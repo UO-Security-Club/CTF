@@ -285,8 +285,10 @@
                               <h3><u><b>Net Challenge 1 (Packet Sniffing and Port Scanning) : 10pts</b></u></h3>
                               <br>
                               <p><u>Description:</u> find the open ports from the range 7770-7780. There's a few of them but only one of them serves the flag.
-                              <br> Analyze packets for flag in app-layer data. The lecture notes in regards to this challenge can be found here:
+                              <br> Analyze packets for the flag in app-layer data. The flag-prefix is of the form UOSEC_ followed by 6 hex-values.
+			      <br>The lecture notes in regards to this challenge can be found here:
 			      <br><a href="https://docs.google.com/document/d/1XV0SjeBxLNYmwUy4KnQDoiciEzFHubmGWw9-zWsqDfI/edit?usp=sharing">Lecture Notes</a>
+			      <br>
                               <br> Target IP is 35.160.19.245</p>
 
                               <form action="checkFlag.php" method="post" name="chal1">
