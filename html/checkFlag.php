@@ -88,6 +88,7 @@ if ($result->num_rows > 0) {
 	$isFlag = 0;
 	$i = 1;
 	while($row = $result->fetch_assoc()) {
+		//echo $row["chal_flag"] . " " . $sPOSTflag . " " . $row["chal_name"];
 		if (strcmp($row["chal_flag"], $sPOSTflag) == 0 && strcmp($row["chal_name"], $sChal) == 0) {
 			$isFlag = 1;
 			$chalID = $row["chal_id"];

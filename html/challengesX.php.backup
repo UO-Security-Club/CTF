@@ -32,7 +32,7 @@
                               <h3><u><b>Challenge 1 (Buffer Overflow Vuln) : 10pts</b></u></h3>
                               <br>
                               <p><u>Description:</u> This program is vulnerable to a simple buffer overflow. The goal here is to overwrite the <b>i</b> variable to a non-zero value</p>
-                              <p>Connect to the program remotely with: nc 35.160.19.245 4445</p>
+                              <p>Connect to the program remotely with: nc 35.167.126.129 4445</p>
 
                               <a href="images/exploit1_src_code.png">Source Code</a>
                               <form action="checkFlag.php" method="post" name="chal1">
@@ -56,7 +56,7 @@
                               <br>
                               <p><u>Description:</u> This program is vulnerable to a trivial integer overflow. By assigning an int variable to an unsigned short, the int value is truncated.<br>
                               The goal here is to show how a non-zero int value can result in an unsigned short equal to zero. Here's a good article on integer overflows <a href="http://phrack.org/issues/60/10.html">Basic Integer Overflows</a></p>
-                              <p>Connect to the program remotely with: nc 35.160.19.245 4455</p>
+                              <p>Connect to the program remotely with: nc 35.167.126.129 4455</p>
 
                               <a href="images/exploit2_src_code.png">Source Code</a>
                               <form action="checkFlag.php" method="post" name="chal2">
@@ -80,7 +80,7 @@
                               <br>
                               <p><u>Description:</u> This program has a classic format string vulnerability. In short,   this allows input data to be evaluated as format string parameters. <br>
                               The goal here is trick printf into reading the global string variable that holds the flag.</p>
-                              <p>Connect to the program remotely with: nc 35.160.19.245 4466</p>
+                              <p>Connect to the program remotely with: nc 35.167.126.129 4466</p>
 
                               <a href="images/exploit3_src_code.png">Source Code</a>
                               <form action="checkFlag.php" method="post" name="chal2">
@@ -118,7 +118,7 @@
                               <br>
                               <p><u>Description:</u> Use your disassembler of choice to reverse engineer the binary file. Try to find the hidden functionality that prints the flag. <br>
                               You can download the binary file at the link below. Once you've found the hidden functionality, run it on netcat (nc) as specified below.</p>
-                              <p>Connect to the program remotely with: nc 35.160.19.245 4477</p>
+                              <p>Connect to the program remotely with: nc 35.167.126.129 4477</p>
 
                               <a href="https://drive.google.com/open?id=0BwRJUP-ZgBwsQ2xNVWMxdVN0QlU">Binary File</a>
                               <form action="checkFlag.php" method="post" name="chal1">
@@ -244,8 +244,7 @@
                          <div class="col-lg-12">
                               <h3> <u><b>Challenge 5 (Reflected XSS) : 15pts</b></u></h3>
                               <br>
-                              <p><u>Description:</u><br>the admin of this site checks every comment that you post. Force their browser to send you their cookie.
-				Inject some script that will send a cookie to '/grabCookie.php?cookie='. The flag is in the admin's cookie. Good luck :)</p>
+                              <p><u>Description:</u><br></p>
 
                               <a href="http://ctf.uosec.info:5041/">Go to website</a>
                               <form action="checkFlag.php" method="post" name="chal5">
@@ -269,45 +268,6 @@
           <li><button id="WebChal5Btn" onclick="openModal(document.getElementById('WebChal5Modal'))">Challenge 5 (Stored XSS) : 15pts</button></li>
      </div>
      <!-- End Web App Challenge Buttons -->
-     <br>
-
-     <h2>Net: </h2>
-     <!-- Net Modals -->
-     <div>
-
-          <!-- Net Challenge 1 -->
-          <div id="NetChal1Modal" class="modal">
-               <!-- Modal content -->
-               <div class="modal-content">
-                    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NetChal1Modal'))" style="color:#FFFFFF;">&times;</span>
-                    <div class="row">
-                         <div class="col-lg-12">
-                              <h3><u><b>Net Challenge 1 (Packet Sniffing and Port Scanning) : 10pts</b></u></h3>
-                              <br>
-                              <p><u>Description:</u> find the open ports from the range 7770-7780. There's a few of them but only one of them serves the flag.
-                              <br> Analyze packets for the flag in app-layer data. The flag-prefix is of the form UOSEC_ followed by 6 hex-values.
-			      <br>The lecture notes in regards to this challenge can be found here:
-			      <br><a href="https://docs.google.com/document/d/1XV0SjeBxLNYmwUy4KnQDoiciEzFHubmGWw9-zWsqDfI/edit?usp=sharing">Lecture Notes</a>
-			      <br>
-                              <br> Target IP is 35.160.19.245</p>
-
-                              <form action="checkFlag.php" method="post" name="chal1">
-                                   <label for="net1_flag">Enter Flag:</label>
-                                   <input id="net1_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="net1" />
-                              </form>
-                         </div>
-                    </div>
-               </div>
-          </div>
-
-     </div>
-     <!-- End Net Modals -->
-     <!-- Net Challenge Buttons -->
-     <div id="NetChallengeButtons">
-          <li><button id="NetChal1Btn" onclick="openModal(document.getElementById('NetChal1Modal'))">Net Challenge 1: 10pts</button></li>
-     </div>
-     <!-- End Net Challenge Buttons -->
      <br>
 
      <h2>Crypto (classical): </h2>
@@ -367,7 +327,7 @@
                          <div class="col-lg-12">
                               <h3><b><u>Challenge 3: 5pts</u></b></h3>
                               <br>
-                              <p><u>Description:</u> An affinity for math may be helpful for this one.</p>
+                              <p><u>Description:</u> You need math for this one! ...barely.</p>
                               <p>Ciphertext: FYYZSPGFNYBCFXZKQPC <br> a=9 b=5</p>
                               <p>Flag format is UOSEC_[******] with the deciphered message in uppercase, between the brackets.</p>
                               <form action="checkFlag.php" method="post" name="chalN">
