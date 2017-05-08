@@ -254,7 +254,7 @@
                               <br>
                               <p><u>Description:</u> THARS FLAGS IN THEM THAR PIXELS!</p>
                               <p>Flag format is UOSEC_[******]</p>
-                              <p><img src= "images/steg1.bmp" /></p>
+                              <p><img src= "../images/steg1.bmp" /></p>
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
@@ -276,7 +276,7 @@
                               <br>
                               <p><u>Description:</u> Just have to dig a little deeper this time.</p>
                               <p>Flag format is UOSEC_[******]</p>
-                              <p><img src= "images/steg2.bmp" /></p>
+                              <p><img src= "../images/steg2.bmp" /></p>
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
@@ -298,7 +298,7 @@
                               <br>
                               <p><u>Description:</u> Cats have magic abilities.</p>
                               <p>Flag format is UOSEC_[******]</p>
-                              <p><img style='height: auto; width: auto; max-height: 100%; max-width:100%; object-fit: contain' src="images/steg3.jpg" /></p>
+                              <p><img style='height: auto; width: auto; max-height: 100%; max-width:100%; object-fit: contain' src="../images/steg3.jpg" /></p>
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
@@ -320,7 +320,7 @@
                               <br>
                               <p><u>Description:</u> Not fun to do by hand. </p>
                               <p>Flag format is UOSEC_[******]</p>
-                              <p><img style='height: auto; width: auto; max-height: 100%; max-width:100%; object-fit: contain' src= "images/steg4.bmp" /></p>
+                              <p><img style='height: auto; width: auto; max-height: 100%; max-width:100%; object-fit: contain' src= "../images/steg4.bmp" /></p>
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
@@ -342,7 +342,7 @@
                               <br>
                               <p><u>Description:</u> This album has a ton of tracks on it, but only a few singles.</p>
                               <p>Flag format is UOSEC_[******]</p>
-                              <p><img style='height: auto; width: auto; max-height: 100%; max-width:100%; object-fit: contain' src="images/steg5.png" /></p>
+                              <p><img style='height: auto; width: auto; max-height: 100%; max-width:100%; object-fit: contain' src="../images/steg5.png" /></p>
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
