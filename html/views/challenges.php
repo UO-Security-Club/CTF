@@ -408,6 +408,6 @@
         <!-- /.container -->
     </footer>
 
-<script src="js/modalScript.js"></script>
+<script src="../js/modalScript.js"></script>
 </body>
 </html>
