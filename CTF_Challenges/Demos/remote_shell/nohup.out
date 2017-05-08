@@ -1,1 +1,0 @@
-bash: line 7: 16879 Terminated              nohup python bhpnet.py -l -p 4489 -c

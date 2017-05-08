@@ -47,7 +47,6 @@ if (isset($login)) {
 </div>
 </body>
 </html>
-<!--<div class="container" style="background-color:darkgrey">
-	<a href="register.php">Register</a>
+
 </div>
 </div>

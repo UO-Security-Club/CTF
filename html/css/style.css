@@ -7,8 +7,8 @@
 }
 
 html {
-  background: url(https://dl.dropboxusercontent.com/u/159328383/background.jpg) no-repeat center center fixed;
-  /*background: url(http://more-sky.com/data/out/7/IMG_202166.jpg) no-repeat center center fixed;*/
+  /*background: url("../images/signIn-bg.jpg") no-repeat center center fixed;*/
+  background-color: #171a1e;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -42,7 +42,7 @@ body, input, button {
   text-shadow: 1px 1px 3px #23203b;
 }
 .login form .input-group {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .login form .input-group:last-of-type {
@@ -77,18 +77,18 @@ body, input, button {
 }
 .login form button {
   margin-top: 20px;
-  background: #008080;
+  background: #015d70; /*#008080;*/
   border: none;
   font-size: 1.6em;
   font-weight: 300;
   padding: 5px 0;
   width: 100%;
   border-radius: 3px;
-  color: #e6ffff;
-  border-bottom: 4px solid #004d4d;
+  color: #efefef;
+  /*border-bottom: 4px solid #004d4d;*/
 }
 .login form button:hover {
-  background: #30b166;
+  background: #0badc6; /*#30b166;*/
   -webkit-animation: hop 1s;
   animation: hop 1s;
 }

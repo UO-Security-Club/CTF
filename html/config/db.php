@@ -14,4 +14,4 @@
 define("DB_HOST", "localhost");
 define("DB_NAME", "CTF");
 define("DB_USER", "root");
-define("DB_PASS", "UOSec2017!");
+define("DB_PASS", "hook3rSpit18!");

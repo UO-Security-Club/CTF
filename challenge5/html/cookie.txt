@@ -1,2 +1,0 @@
-
-Recieved Cookie:<br>PHPSESSID=p8dmqo3ee848mtc3b2d7v962c7

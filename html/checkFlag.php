@@ -2,7 +2,7 @@
 
 $server = "localhost";
 $username = "root";
-$password = "UOSec2017!";
+$password = "hook3rSpit18!";
 $dbname = "CTF";
 
 function updateScore($usr_id, $chal_id, $usr_score, $chal_pts, $db_conn) {
@@ -64,12 +64,13 @@ function updateScore($usr_id, $chal_id, $usr_score, $chal_pts, $db_conn) {
 }
 
 echo "<html>";
-session_start();
+require('../user_includes/accountInfo.php');
+/*session_start();
 if (isset($_SESSION['user_name'])) {
 	$usr = $_SESSION['user_name'];
 } else {
 	exit("<p>You must be logged in to submit a flag</p><br><a href='index.php'>Login</a>");
-}
+}*/
 
 $sPOSTflag = htmlspecialchars($_POST["flag"]);
 $sChal = htmlspecialchars($_POST["chal_flag"]);
@@ -88,7 +89,10 @@ if ($result->num_rows > 0) {
 	$isFlag = 0;
 	$i = 1;
 	while($row = $result->fetch_assoc()) {
-		//echo $row["chal_flag"] . " " . $sPOSTflag . " " . $row["chal_name"];
+		//Post params are not placed in the sql query, but instead compared to fetched table entries
+		//Normally this would a lot of unecessary overhead (and just bad practice) but the number of
+		//flags in the DB is so few that I'm leaving it as is for now.
+		/*TODO: Use PDO to safely insert Post params into query*/
 		if (strcmp($row["chal_flag"], $sPOSTflag) == 0 && strcmp($row["chal_name"], $sChal) == 0) {
 			$isFlag = 1;
 			$chalID = $row["chal_id"];
