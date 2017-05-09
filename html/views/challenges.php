@@ -36,7 +36,7 @@
                               flag for you.</p>
                               <p>Connect to the program remotely with: nc 35.160.19.245 4001</p>
 
-                              <a href="images/exploit1_src_code.png">Source Code</a>
+                              <a href="../images/ctf_canary_example1-src.png">Source Code</a>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="chal1_flag">Enter Flag:</label>
                                    <input id="chal1_flag" class="chals" type="text" name="flag" required />
@@ -49,7 +49,7 @@
      <!-- End Native Whitebox Modals -->
      <!-- Native Whitebox Challenge Buttons -->
      <div id="NativeChallengeButtons">
-         <li><button id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Challenge 1 (Buffer Overflow Vuln) : 10pts</button></li>
+         <li><button id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1 : 10pts</button></li>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
      <br>
