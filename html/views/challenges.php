@@ -18,7 +18,7 @@
      <h1>Challenges:</h1>
      <br>
 
-     <h2>Native: (Whitebox Intro)</h2>
+     <h2>x86 Stack-Based Memory Corruption:</h2>
      <!-- Native Whitebox Modals -->
      <div>
 
@@ -29,10 +29,12 @@
                     <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NWBChal1Modal'))" style="color:#FFFFFF;">&times;</span>
                     <div class="row">
                          <div class="col-lg-12">
-                              <h3><u><b>Challenge 1 (Buffer Overflow Vuln) : 10pts</b></u></h3>
+                              <h3><u><b>Canary Example 1 : 10pts</b></u></h3>
                               <br>
-                              <p><u>Description:</u> This program is vulnerable to a simple buffer overflow. The goal here is to overwrite the <b>i</b> variable to a non-zero value</p>
-                              <p>Connect to the program remotely with: nc 35.160.19.245 4445</p>
+                              <p><u>Description:</u> We've implemented a 'super-secure' stack canary to mitigate inaccurate return values from 
+                              func1() due to buffer overflows. Overwrite the error variable to a non-zero value and the process will barf out a 
+                              flag for you.</p>
+                              <p>Connect to the program remotely with: nc 35.160.19.245 4001</p>
 
                               <a href="images/exploit1_src_code.png">Source Code</a>
                               <form action="checkFlag.php" method="post" name="chal1">
