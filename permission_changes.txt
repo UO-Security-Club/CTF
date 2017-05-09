@@ -1,0 +1,13 @@
+Changed webroot (/var/www) and all subdirs and subfiles to be owned by www-data and have group www-data. Then changed all permissions to 750.
+This way challanges that require getting a shell will not allow the user to read any data from th webroot (incase there's a flag or other sensitive info).
+	commands used:
+		chown -R www-data:www-data /var/www
+		chmod -R 750 /var/www
+
+Changed permissions and group for /bin/su. The su command is still owned by root but has group ubuntu with permissions set to 750.
+This way challenges that require getting a shell will not allow users to attempt switching to other system accounts.
+Additionally, 'ctf- * ' accounts are not on the sudo'ers list.
+	commands used:
+		chmod 750 /bin/su
+		chown root:ubuntu /bin/su
+
