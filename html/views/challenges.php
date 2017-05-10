@@ -115,7 +115,7 @@
      <!-- End Native Blackbox Modals -->
      <!-- Native Blackbox Challenge Buttons -->
      <div id="ReverseChallengeButtons">
-          <li><button id="NBBChal1Btn" onclick="openModal(document.getElementById('NBBChal1Modal'))">Challenge 1 (Reverse ELF-32bit / Hidden Functionality) : 15pts</button></li>
+          <button class="modal-button" id="NBBChal1Btn" onclick="openModal(document.getElementById('NBBChal1Modal'))">RE [Not Available]<br>15pts</button>
      </div>
      <!-- End Native Blackbox Challenge Buttons -->
      <br>
@@ -260,12 +260,12 @@
      <!-- End Crypto Modals -->
      <!-- Crypto Challenge Buttons -->
      <div id="CryptoChallengeButtons">
-          <li><button id="CryptoChal1Btn" onclick="openModal(document.getElementById('CryptoChal1Modal'))" >Challenge 1: 5pts</button></li>
-          <li><button id="CryptoChal2Btn" onclick="openModal(document.getElementById('CryptoChal2Modal'))" >Challenge 2: 5pts</button></li>
-          <li><button id="CryptoChal3Btn" onclick="openModal(document.getElementById('CryptoChal3Modal'))" >Challenge 3: 5pts</button></li>
-          <li><button id="CryptoChal4Btn" onclick="openModal(document.getElementById('CryptoChal4Modal'))" >Challenge 4: 10pts</button></li>
-          <li><button id="CryptoChal5Btn" onclick="openModal(document.getElementById('CryptoChal5Modal'))" >Challenge 5: 10pts</button></li>
-          <li><button id="CryptoChal6Btn" onclick="openModal(document.getElementById('CryptoChal6Modal'))" >Challenge 6: 10pts</button></li>
+          <button class="modal-button" id="CryptoChal1Btn" onclick="openModal(document.getElementById('CryptoChal1Modal'))" >Challenge 1<br>5pts</button>
+          <button class="modal-button" id="CryptoChal2Btn" onclick="openModal(document.getElementById('CryptoChal2Modal'))" >Challenge 2<br>5pts</button>
+          <button class="modal-button" id="CryptoChal3Btn" onclick="openModal(document.getElementById('CryptoChal3Modal'))" >Challenge 3<br>5pts</button>
+          <button class="modal-button" id="CryptoChal4Btn" onclick="openModal(document.getElementById('CryptoChal4Modal'))" >Challenge 4<br>10pts</button>
+          <button class="modal-button" id="CryptoChal5Btn" onclick="openModal(document.getElementById('CryptoChal5Modal'))" >Challenge 5<br>10pts</button>
+          <button class="modal-button" id="CryptoChal6Btn" onclick="openModal(document.getElementById('CryptoChal6Modal'))" >Challenge 6<br>10pts</button>
      </div>
      <!-- End Crypto Challenge Buttons -->
 
