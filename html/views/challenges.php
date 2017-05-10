@@ -40,7 +40,8 @@
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="chal1_flag">Enter Flag:</label>
                                    <input id="chal1_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="chal1" />
+				   <input type="hidden" name="chal_flag" value="chal1" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
