@@ -19,10 +19,10 @@
      <br>
 
      <h2>x86 Stack-Based Memory Corruption:</h2>
-     <!-- Native Whitebox Modals -->
+     <!-- Stack-Based Memory Corruption Modals -->
      <div>
 
-          <!--Native Whitebox Challenge 1 -->
+          <!--Canary Challenge 1 -->
           <div id="NWBChal1Modal" class="modal">
                <!-- Modal content -->
                <div class="modal-content">
@@ -40,7 +40,7 @@
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="chal1_flag">Enter Flag:</label>
                                    <input id="chal1_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="exploit1" />
+                                   <input type="submit" name="chal_flag" value="chal1" />
                               </form>
                          </div>
                     </div>
