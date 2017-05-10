@@ -36,7 +36,7 @@
                               flag for you.</p>
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4001</p>
 
-                              <a href="../images/ctf_canary_example1-src.png">Source Code</a>
+                              <a href="../images/ctf_canary_example1-src.png">Source Code</a><br>
                               <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsZXc0dUJXcExQUmc/view?usp=sharing">Download Binary</a>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="chal1_flag">Enter Flag:</label>
@@ -61,7 +61,7 @@
                               <p><b>Description:</b><br> The funny thing about the rand() function's randomness is that it's only as random as the seed it's given.. Do you know what time it is?</p>
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4002</p>
 
-                              <a href="../images/ctf_canary_example2-src.png">Source Code</a>
+                              <a href="../images/ctf_canary_example2-src.png">Source Code</a><br>
                               <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsTU94T1NNaFRRenM/view?usp=sharing">Download Binary</a>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="canary2_flag">Enter Flag:</label>
