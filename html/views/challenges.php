@@ -31,26 +31,55 @@
                          <div class="col-lg-12">
                               <h3><u><b>Canary Example 1 : 10pts</b></u></h3>
                               <br>
-                              <p><u>Description:</u> We've implemented a 'super-secure' stack canary to mitigate inaccurate return values from 
+                              <p><b>Description:</b><br> We've implemented a 'super-secure' stack canary to mitigate inaccurate return values from 
                               func1() due to buffer overflows. Overwrite the error variable to a non-zero value and the process will barf out a 
                               flag for you.</p>
-                              <p>Connect to the program remotely with: nc 35.160.19.245 4001</p>
+                              <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4001</p>
 
                               <a href="../images/ctf_canary_example1-src.png">Source Code</a>
+                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsZXc0dUJXcExQUmc/view?usp=sharing">Download Binary</a>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="chal1_flag">Enter Flag:</label>
                                    <input id="chal1_flag" class="chals" type="text" name="flag" required />
-				   <input type="hidden" name="chal_flag" value="chal1" />
+                                   <input type="hidden" name="chal_flag" value="chal1" />
                                    <input type="submit" />
                               </form>
                          </div>
                     </div>
                </div>
           </div>
-     <!-- End Native Whitebox Modals -->
-     <!-- Native Whitebox Challenge Buttons -->
+
+          <!--Canary Challenge 2 -->
+          <div id="NWBChal2Modal" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NWBChal2Modal'))" style="color:#FFFFFF;">&times;</span>
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <h3><u><b>Canary Example 2 : 30pts</b></u></h3>
+                              <br>
+                              <p><b>Description:</b><br> We've implemented a 'super-secure' stack canary to mitigate inaccurate return values from 
+                              func1() due to buffer overflows. Overwrite the error variable to a non-zero value and the process will barf out a 
+                              flag for you.</p>
+                              <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4002</p>
+
+                              <a href="../images/ctf_canary_example2-src.png">Source Code</a>
+                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsTU94T1NNaFRRenM/view?usp=sharing">Download Binary</a>
+                              <form action="checkFlag.php" method="post" name="chal1">
+                                   <label for="canary2_flag">Enter Flag:</label>
+                                   <input id="canary2_flag" class="chals" type="text" name="flag" required />
+                                   <input type="hidden" name="chal_flag" value="canary2" />
+                                   <input type="submit" />
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     <!-- Stack-Based Memory Corruption Modals -->
+     <!-- Stack-Based Memory Corruption Buttons -->
      <div id="NativeChallengeButtons">
          <li><button id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1 : 10pts</button></li>
+         <li><button id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2 : 30pts</button></li>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
      <br>
