@@ -5,7 +5,8 @@
 <!-- Bootstrap Core CSS -->
      <link href="../css/bootstrap.css" rel="stylesheet">
      <!-- Custom CSS -->
-     <link href="../css/full-width-pics.css" rel="stylesheet">
+     <!-- -->
+	<link href="../css/full-width-pics.css" rel="stylesheet">
      <!--Modal CSS-->
      <link href="../css/modal.css" rel="stylesheet">
      <?php
@@ -76,8 +77,8 @@
      <!-- Stack-Based Memory Corruption Modals -->
      <!-- Stack-Based Memory Corruption Buttons -->
      <div id="NativeChallengeButtons">
-         <li><button id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1 : 10pts</button></li>
-         <li><button id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2 : 30pts</button></li>
+         <button class="modal-button" id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1<br>10 pts</button>
+         <button class="modal-button" id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2<br>30 pts</button>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
      <br>
