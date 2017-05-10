@@ -58,9 +58,7 @@
                          <div class="col-lg-12">
                               <h3><u><b>Canary Example 2 : 30pts</b></u></h3>
                               <br>
-                              <p><b>Description:</b><br> We've implemented a 'super-secure' stack canary to mitigate inaccurate return values from 
-                              func1() due to buffer overflows. Overwrite the error variable to a non-zero value and the process will barf out a 
-                              flag for you.</p>
+                              <p><b>Description:</b><br> The funny thing about the rand() function's randomness is that it's only as random as the seed it's given.. Do you know what time it is?</p>
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4002</p>
 
                               <a href="../images/ctf_canary_example2-src.png">Source Code</a>
