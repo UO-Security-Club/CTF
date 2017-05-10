@@ -40,8 +40,8 @@
                               <a href="../images/ctf_canary_example1-src.png">Source Code</a><br>
                               <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsZXc0dUJXcExQUmc/view?usp=sharing">Download Binary</a><br>
                               <form action="checkFlag.php" method="post" name="chal1">
-                                   <label for="chal1_flag">Enter Flag:</label>
-                                   <input id="chal1_flag" class="chals" type="text" name="flag" required />
+                                   <!--<label for="chal1_flag">Enter Flag:</label>-->
+                                   <input id="chal1_flag" class="chals" type="text" name="flag" placeholder="Enter Flag" required />
                                    <input type="hidden" name="chal_flag" value="chal1" />
                                    <input type="submit" />
                               </form>
