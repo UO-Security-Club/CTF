@@ -139,7 +139,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="crypto1" />
+                                   <input type="hidden" name="chal_flag" value="crypto1" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -161,7 +162,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="crypto2" />
+                                   <input type="hidden" name="chal_flag" value="crypto2" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -183,7 +185,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="crypto3" />
+                                   <input type="hidden" name="chal_flag" value="crypto3" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -205,7 +208,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="crypto4" />
+                                   <input type="hidden" name="chal_flag" value="crypto4" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -227,7 +231,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="crypto5" />
+                                   <input type="hidden" name="chal_flag" value="crypto5" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -249,7 +254,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="crypto6" />
+                                   <input type="hidden" name="chal_flag" value="crypto6" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -289,7 +295,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="steg1" />
+                                   <input type="hidden" name="chal_flag" value="steg1" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -311,7 +318,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="steg2" />
+                                   <input type="hidden" name="chal_flag" value="steg2" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -333,7 +341,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="steg3" />
+                                   <input type="hidden" name="chal_flag" value="steg3" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -355,7 +364,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="steg4" />
+                                   <input type="hidden" name="chal_flag" value="steg4" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -377,7 +387,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="steg5" />
+                                   <input type="hidden" name="chal_flag" value="steg5" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -403,7 +414,8 @@
                               <form action="checkFlag.php" method="post" name="chalN">
                                    <label for="chalN_flag">Enter Flag:</label>
                                    <input id="chalN_flag" class="chals" type="text" name="flag" required />
-                                   <input type="submit" name="chal_flag" value="steg6" />
+                                   <input type="hidden" name="chal_flag" value="steg6" />
+                                   <input type="submit" />
                               </form>
                          </div>
                     </div>
@@ -414,12 +426,12 @@
      <!-- End Steganography Modals -->
      <!-- Steganography Challenge Buttons -->
      <div id="SubsectionChallengeButtons">
-          <li><button id="StegChal1Btn" onclick="openModal(document.getElementById('StegChal1Modal'))" >Challenge 1: 5pts</button></li>
-          <li><button id="StegChal2Btn" onclick="openModal(document.getElementById('StegChal2Modal'))" >Challenge 2: 5pts</button></li>
-          <li><button id="StegChal3Btn" onclick="openModal(document.getElementById('StegChal3Modal'))" >Challenge 3: 5pts</button></li>
-          <li><button id="StegChal4Btn" onclick="openModal(document.getElementById('StegChal4Modal'))" >Challenge 4: 10pts</button></li>
-          <li><button id="StegChal5Btn" onclick="openModal(document.getElementById('StegChal5Modal'))" >Challenge 5: 10pts</button></li>
-          <li><button id="StegChal6Btn" onclick="openModal(document.getElementById('StegChal6Modal'))" >Challenge 6: 10pts</button></li>
+          <button class="modal-button" id="StegChal1Btn" onclick="openModal(document.getElementById('StegChal1Modal'))" >Challenge 1<br>5pts</button>
+          <button class="modal-button" id="StegChal2Btn" onclick="openModal(document.getElementById('StegChal2Modal'))" >Challenge 2<br>5pts</button>
+          <button class="modal-button" id="StegChal3Btn" onclick="openModal(document.getElementById('StegChal3Modal'))" >Challenge 3<br>5pts</button>
+          <button class="modal-button" id="StegChal4Btn" onclick="openModal(document.getElementById('StegChal4Modal'))" >Challenge 4<br>10pts</button>
+          <button class="modal-button" id="StegChal5Btn" onclick="openModal(document.getElementById('StegChal5Modal'))" >Challenge 5<br>10pts</button>
+          <button class="modal-button" id="StegChal6Btn" onclick="openModal(document.getElementById('StegChal6Modal'))" >Challenge 6<br>10pts</button>
      </div>
      <!-- End Steganography Challenge Buttons -->
 
