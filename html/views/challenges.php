@@ -30,7 +30,7 @@
                     <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NWBChal1Modal'))" style="color:#FFFFFF;">&times;</span>
                     <div class="row">
                          <div class="col-lg-12">
-                              <h3><u><b>Canary Example 1 : 10pts</b></u></h3>
+                              <h3><b>Canary Example 1 : 10pts</b></h3>
                               <br>
                               <p><b>Description:</b><br> We've implemented a 'super-secure' stack canary to mitigate inaccurate return values from 
                               func1() due to buffer overflows. Overwrite the error variable to a non-zero value and the process will barf out a 
@@ -38,7 +38,7 @@
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4001</p>
 
                               <a href="../images/ctf_canary_example1-src.png">Source Code</a><br>
-                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsZXc0dUJXcExQUmc/view?usp=sharing">Download Binary</a>
+                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsZXc0dUJXcExQUmc/view?usp=sharing">Download Binary</a><br>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="chal1_flag">Enter Flag:</label>
                                    <input id="chal1_flag" class="chals" type="text" name="flag" required />
@@ -57,13 +57,13 @@
                     <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NWBChal2Modal'))" style="color:#FFFFFF;">&times;</span>
                     <div class="row">
                          <div class="col-lg-12">
-                              <h3><u><b>Canary Example 2 : 30pts</b></u></h3>
+                              <h3><b>Canary Example 2 : 30pts</b></h3>
                               <br>
                               <p><b>Description:</b><br> The funny thing about the rand() function's randomness is that it's only as random as the seed it's given.. Do you know what time it is?</p>
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4002</p>
 
                               <a href="../images/ctf_canary_example2-src.png">Source Code</a><br>
-                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsTU94T1NNaFRRenM/view?usp=sharing">Download Binary</a>
+                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsTU94T1NNaFRRenM/view?usp=sharing">Download Binary</a><br>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <label for="canary2_flag">Enter Flag:</label>
                                    <input id="canary2_flag" class="chals" type="text" name="flag" required />
