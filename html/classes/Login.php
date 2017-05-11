@@ -35,8 +35,16 @@ class Login
         }
         // login via post data (if user just submitted a login form)
         elseif (isset($_POST["login"])) {
-            $this->dologinWithPostData();
+                // login user as guest if guest parameter is submitted
+                if (isset($_POST["Guest"])) {
+                    $this->loginAsGuest();
+                }
+                // otherwise login normally
+                else{
+                    $this->dologinWithPostData();
+                }
         }
+
     }
 
     /**
@@ -113,6 +121,12 @@ class Login
         // return a little feeedback message
         $this->messages[] = "You have been logged out.";
 
+    }
+
+    public function loginAsGuest()
+    {
+        $_SESSION['user_name'] = "Guest";
+        $_SESSION['user_login_status'] = 1;
     }
 
     /**
