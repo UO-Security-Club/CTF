@@ -65,9 +65,34 @@
                               <a href="../images/ctf_canary_example2-src.png">Source Code</a><br>
                               <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsTU94T1NNaFRRenM/view?usp=sharing">Download Binary</a><br>
                               <form action="checkFlag.php" method="post" name="chal1">
-                                   <label for="canary2_flag">Enter Flag:</label>
-                                   <input id="canary2_flag" class="chals" type="text" name="flag" required />
+                                   
+                                   <input id="canary2_flag" class="chals" type="text" name="flag" placeholder="Enter Flag" required />
                                    <input type="hidden" name="chal_flag" value="canary2" />
+                                   <input type="submit" />
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+           <!--Canary Challenge 3 -->
+          <div id="NWBChal3Modal" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NWBChal3Modal'))" style="color:#FFFFFF;">&times;</span>
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <h3><b>Canary Example 3 : 30pts</b></h3>
+                              <br>
+                              <p><b>Description:</b><br> [TO-DO]</p>
+                              <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4003</p>
+
+                              <a href="../images/ctf_canary_example3-src.png">Source Code</a><br>
+                              <a href="">Download Binary</a><br>
+                              <form action="checkFlag.php" method="post" name="chal1">
+                                   <!--<label for="chal1_flag">Enter Flag:</label>-->
+                                   <input id="canary3_flag" class="chals" type="text" name="flag" placeholder="Enter Flag" required />
+                                   <input type="hidden" name="chal_flag" value="canary3" />
                                    <input type="submit" />
                               </form>
                          </div>
@@ -79,6 +104,7 @@
      <div id="NativeChallengeButtons">
          <button class="modal-button" id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1<br>10 pts</button>
          <button class="modal-button" id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2<br>30 pts</button>
+         <button class="modal-button" id="NWBChal3Btn" onclick="openModal(document.getElementById('NWBChal3Modal'))">Canary Example 3<br>30 pts</button>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
      <br>
