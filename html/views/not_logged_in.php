@@ -42,7 +42,8 @@ if (isset($login)) {
                 <button type="submit" class="float" value="Register">Register</button>
             </form>
             <form method="post" action="index.php" name="guestlogin">
-                <button type="submit" class="float" name="Guest" value="Guest">Continue As Guest</button>
+		<input type="hidden" name="Guest" value="True">
+                <button type="submit" class="float" name="login" value="Guest">Continue As Guest</button>
             </form>
         </div>
     </div>
