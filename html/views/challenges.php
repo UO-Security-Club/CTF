@@ -14,10 +14,10 @@
           require("user_includes/accountInfo.php");
      ?>
 </head>
-<body>
+<body class="main-body">
 <section>
 <div class="container">
-     <h1>Challenges:</h1>
+     <h1>Challenges</h1>
      <br>
 
      <!-- <h2>x86 Stack-Based Memory Corruption:</h2>
@@ -109,9 +109,8 @@
          <button class="snip1535" id="NWBChal3Btn" onclick="openModal(document.getElementById('NWBChal3Modal'))">Canary Example 3<br>30 pts</button>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
-     <br>
+     <br><br>
 
-     <h2>Reversing</h2>
      <!-- Native Blackbox Modals -->
      <div>
 
@@ -142,13 +141,13 @@
      </div>
      <!-- End Native Blackbox Modals -->
      <!-- Native Blackbox Challenge Buttons -->
-     <div id="ReverseChallengeButtons">
+     <div class="modal-div" id="ReverseChallengeButtons">
+	<h2>Reversing</h2>
           <button class="snip1535" id="NBBChal1Btn" onclick="openModal(document.getElementById('NBBChal1Modal'))">RE [Not Available]<br>15pts</button>
      </div>
      <!-- End Native Blackbox Challenge Buttons -->
-     <br>
+     <br><br>
 
-     <h2>Crypto (classical) </h2>
      <!-- Crypto Modals -->
      <div>
 
@@ -293,7 +292,8 @@
      </div>
      <!-- End Crypto Modals -->
      <!-- Crypto Challenge Buttons -->
-     <div id="CryptoChallengeButtons">
+     <div class="modal-div" id="CryptoChallengeButtons">
+	<h2>Crypto (classical) </h2>
           <button class="snip1535" id="CryptoChal1Btn" onclick="openModal(document.getElementById('CryptoChal1Modal'))" >Challenge 1<br>5pts</button>
           <button class="snip1535" id="CryptoChal2Btn" onclick="openModal(document.getElementById('CryptoChal2Modal'))" >Challenge 2<br>5pts</button>
           <button class="snip1535" id="CryptoChal3Btn" onclick="openModal(document.getElementById('CryptoChal3Modal'))" >Challenge 3<br>5pts</button>
@@ -302,9 +302,8 @@
           <button class="snip1535" id="CryptoChal6Btn" onclick="openModal(document.getElementById('CryptoChal6Modal'))" >Challenge 6<br>10pts</button>
      </div>
      <!-- End Crypto Challenge Buttons -->
+     <br><br>
 
-
-     <h2>Steganography </h2>
      <!-- Steganography Modals -->
      <div>
 
@@ -453,7 +452,8 @@
      </div>
      <!-- End Steganography Modals -->
      <!-- Steganography Challenge Buttons -->
-     <div id="SubsectionChallengeButtons">
+     <div class="modal-div" id="SubsectionChallengeButtons">
+	<h2>Steganography </h2>
           <button class="snip1535" id="StegChal1Btn" onclick="openModal(document.getElementById('StegChal1Modal'))" >Challenge 1<br>5pts</button>
           <button class="snip1535" id="StegChal2Btn" onclick="openModal(document.getElementById('StegChal2Modal'))" >Challenge 2<br>5pts</button>
           <button class="snip1535" id="StegChal3Btn" onclick="openModal(document.getElementById('StegChal3Modal'))" >Challenge 3<br>5pts</button>
@@ -462,7 +462,7 @@
           <button class="snip1535" id="StegChal6Btn" onclick="openModal(document.getElementById('StegChal6Modal'))" >Challenge 6<br>10pts</button>
      </div>
      <!-- End Steganography Challenge Buttons -->
-
+     <br><br>
 </div>
 </section>
 <br>

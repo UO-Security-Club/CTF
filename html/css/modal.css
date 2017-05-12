@@ -21,7 +21,7 @@
     width: 80%;
 }
 
-.modal-button {
+/*.modal-button {
   background-color: #006C7F!important;
     border: 3px solid #121a26!important;
     border-radius: 3px!important;
@@ -34,13 +34,21 @@
     font-weight: 500!important;
     margin: 10px 10px!important;
     cursor: pointer!important;
-  /*border-bottom: 4px solid #004d4d;*/
+  border-bottom: 4px solid #004d4d;
 }
 
 .modal-button:hover {
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+}*/
 
+.modal-div {
+	/*background-color: #005767!important;
+	background: rgb(0, 87, 103); Fall-back for browsers that don't support rgba *
+   	background: rgba(0, 87, 103, .1);*/
+	padding: 40px;
+	/*border-top: 2px solid #A6F1FF;*/
+	border-bottom: 2px solid #A6F1FF;
+}
 
 button{
     background:none!important;
