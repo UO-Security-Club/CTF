@@ -103,7 +103,7 @@
      <!-- Stack-Based Memory Corruption Modals -->
      <!-- Stack-Based Memory Corruption Buttons -->
      <div class="modal-div" id="NativeChallengeButtons">
-	<h2>x86 Stack-Based Memory Corruption:</h2>
+	<h2>x86 Stack-Based Memory Corruption</h2>
          <button class="snip1535" id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1<br>10 pts</button>
          <button class="snip1535" id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2<br>30 pts</button>
          <button class="snip1535" id="NWBChal3Btn" onclick="openModal(document.getElementById('NWBChal3Modal'))">Canary Example 3<br>30 pts</button>
@@ -111,7 +111,7 @@
      <!-- End Native Whitebox Challenge Buttons -->
      <br>
 
-     <h2>Native: (Reverse Engineering Intro)</h2>
+     <h2>Reversing</h2>
      <!-- Native Blackbox Modals -->
      <div>
 
@@ -143,12 +143,12 @@
      <!-- End Native Blackbox Modals -->
      <!-- Native Blackbox Challenge Buttons -->
      <div id="ReverseChallengeButtons">
-          <button class="modal-button" id="NBBChal1Btn" onclick="openModal(document.getElementById('NBBChal1Modal'))">RE [Not Available]<br>15pts</button>
+          <button class="snip1535" id="NBBChal1Btn" onclick="openModal(document.getElementById('NBBChal1Modal'))">RE [Not Available]<br>15pts</button>
      </div>
      <!-- End Native Blackbox Challenge Buttons -->
      <br>
 
-     <h2>Crypto (classical): </h2>
+     <h2>Crypto (classical) </h2>
      <!-- Crypto Modals -->
      <div>
 
@@ -304,7 +304,7 @@
      <!-- End Crypto Challenge Buttons -->
 
 
-     <h2>Steganography: </h2>
+     <h2>Steganography </h2>
      <!-- Steganography Modals -->
      <div>
 
