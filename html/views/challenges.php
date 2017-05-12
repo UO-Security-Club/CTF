@@ -84,11 +84,11 @@
                          <div class="col-lg-12">
                               <h3><b>Canary Example 3 : 30pts</b></h3>
                               <br>
-                              <p><b>Description:</b><br> [TO-DO]</p>
+                              <p><b>Description:</b><br> Here we’re going to assume that the stack canary is implemented properly, it’s randomized per call, and the RNG seed is near impossible to predict. Now, our options for bypassing it are mostly based on other possible vulnerabilities within the program.</p>
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4003</p>
 
                               <a href="../images/ctf_canary_example3-src.png">Source Code</a><br>
-                              <a href="">Download Binary</a><br>
+                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsMlJ3WjRacXJUZUk/view?usp=sharing">Download Binary</a><br>
                               <form action="checkFlag.php" method="post" name="chal1">
                                    <!--<label for="chal1_flag">Enter Flag:</label>-->
                                    <input id="canary3_flag" class="chals" type="text" name="flag" placeholder="Enter Flag" required />
