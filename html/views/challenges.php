@@ -9,6 +9,7 @@
 	<link href="../css/full-width-pics.css" rel="stylesheet">
      <!--Modal CSS-->
      <link href="../css/modal.css" rel="stylesheet">
+     <link href="../css/border-button.css" rel="stylesheet">
      <?php
           require("user_includes/accountInfo.php");
      ?>
@@ -19,8 +20,8 @@
      <h1>Challenges:</h1>
      <br>
 
-     <h2>x86 Stack-Based Memory Corruption:</h2>
-     <!-- Stack-Based Memory Corruption Modals -->
+     <!-- <h2>x86 Stack-Based Memory Corruption:</h2>
+     Stack-Based Memory Corruption Modals -->
      <div>
 
           <!--Canary Challenge 1 -->
@@ -101,10 +102,11 @@
           </div>
      <!-- Stack-Based Memory Corruption Modals -->
      <!-- Stack-Based Memory Corruption Buttons -->
-     <div id="NativeChallengeButtons">
-         <button class="modal-button" id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1<br>10 pts</button>
-         <button class="modal-button" id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2<br>30 pts</button>
-         <button class="modal-button" id="NWBChal3Btn" onclick="openModal(document.getElementById('NWBChal3Modal'))">Canary Example 3<br>30 pts</button>
+     <div class="modal-div" id="NativeChallengeButtons">
+	<h2>x86 Stack-Based Memory Corruption:</h2>
+         <button class="snip1535" id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1<br>10 pts</button>
+         <button class="snip1535" id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2<br>30 pts</button>
+         <button class="snip1535" id="NWBChal3Btn" onclick="openModal(document.getElementById('NWBChal3Modal'))">Canary Example 3<br>30 pts</button>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
      <br>
