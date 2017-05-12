@@ -294,12 +294,12 @@
      <!-- End Crypto Modals -->
      <!-- Crypto Challenge Buttons -->
      <div id="CryptoChallengeButtons">
-          <button class="modal-button" id="CryptoChal1Btn" onclick="openModal(document.getElementById('CryptoChal1Modal'))" >Challenge 1<br>5pts</button>
-          <button class="modal-button" id="CryptoChal2Btn" onclick="openModal(document.getElementById('CryptoChal2Modal'))" >Challenge 2<br>5pts</button>
-          <button class="modal-button" id="CryptoChal3Btn" onclick="openModal(document.getElementById('CryptoChal3Modal'))" >Challenge 3<br>5pts</button>
-          <button class="modal-button" id="CryptoChal4Btn" onclick="openModal(document.getElementById('CryptoChal4Modal'))" >Challenge 4<br>10pts</button>
-          <button class="modal-button" id="CryptoChal5Btn" onclick="openModal(document.getElementById('CryptoChal5Modal'))" >Challenge 5<br>10pts</button>
-          <button class="modal-button" id="CryptoChal6Btn" onclick="openModal(document.getElementById('CryptoChal6Modal'))" >Challenge 6<br>10pts</button>
+          <button class="snip1535" id="CryptoChal1Btn" onclick="openModal(document.getElementById('CryptoChal1Modal'))" >Challenge 1<br>5pts</button>
+          <button class="snip1535" id="CryptoChal2Btn" onclick="openModal(document.getElementById('CryptoChal2Modal'))" >Challenge 2<br>5pts</button>
+          <button class="snip1535" id="CryptoChal3Btn" onclick="openModal(document.getElementById('CryptoChal3Modal'))" >Challenge 3<br>5pts</button>
+          <button class="snip1535" id="CryptoChal4Btn" onclick="openModal(document.getElementById('CryptoChal4Modal'))" >Challenge 4<br>10pts</button>
+          <button class="snip1535" id="CryptoChal5Btn" onclick="openModal(document.getElementById('CryptoChal5Modal'))" >Challenge 5<br>10pts</button>
+          <button class="snip1535" id="CryptoChal6Btn" onclick="openModal(document.getElementById('CryptoChal6Modal'))" >Challenge 6<br>10pts</button>
      </div>
      <!-- End Crypto Challenge Buttons -->
 
@@ -454,12 +454,12 @@
      <!-- End Steganography Modals -->
      <!-- Steganography Challenge Buttons -->
      <div id="SubsectionChallengeButtons">
-          <button class="modal-button" id="StegChal1Btn" onclick="openModal(document.getElementById('StegChal1Modal'))" >Challenge 1<br>5pts</button>
-          <button class="modal-button" id="StegChal2Btn" onclick="openModal(document.getElementById('StegChal2Modal'))" >Challenge 2<br>5pts</button>
-          <button class="modal-button" id="StegChal3Btn" onclick="openModal(document.getElementById('StegChal3Modal'))" >Challenge 3<br>5pts</button>
-          <button class="modal-button" id="StegChal4Btn" onclick="openModal(document.getElementById('StegChal4Modal'))" >Challenge 4<br>10pts</button>
-          <button class="modal-button" id="StegChal5Btn" onclick="openModal(document.getElementById('StegChal5Modal'))" >Challenge 5<br>10pts</button>
-          <button class="modal-button" id="StegChal6Btn" onclick="openModal(document.getElementById('StegChal6Modal'))" >Challenge 6<br>10pts</button>
+          <button class="snip1535" id="StegChal1Btn" onclick="openModal(document.getElementById('StegChal1Modal'))" >Challenge 1<br>5pts</button>
+          <button class="snip1535" id="StegChal2Btn" onclick="openModal(document.getElementById('StegChal2Modal'))" >Challenge 2<br>5pts</button>
+          <button class="snip1535" id="StegChal3Btn" onclick="openModal(document.getElementById('StegChal3Modal'))" >Challenge 3<br>5pts</button>
+          <button class="snip1535" id="StegChal4Btn" onclick="openModal(document.getElementById('StegChal4Modal'))" >Challenge 4<br>10pts</button>
+          <button class="snip1535" id="StegChal5Btn" onclick="openModal(document.getElementById('StegChal5Modal'))" >Challenge 5<br>10pts</button>
+          <button class="snip1535" id="StegChal6Btn" onclick="openModal(document.getElementById('StegChal6Modal'))" >Challenge 6<br>10pts</button>
      </div>
      <!-- End Steganography Challenge Buttons -->
 
