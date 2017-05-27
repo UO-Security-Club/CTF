@@ -100,6 +100,31 @@
                     </div>
                </div>
           </div>
+
+          <!--Canary Challenge 4 -->
+          <div id="NWBChal4Modal" class="modal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                    <span class="close" id="span1" onclick = "closeWithSpan(document.getElementById('NWBChal4Modal'))" style="color:#FFFFFF;">&times;</span>
+                    <div class="row">
+                         <div class="col-lg-12">
+                              <h3><b>Canary Example 4 (Bonus Challenge): 50pts</b></h3>
+                              <br>
+                              <p><b>Description:</b><br> This challenge binary was compiled with gcc's -fstack-protector. In-light of that, we've neglected implementing any bounds checking of user input since the canary should always catch an overflow!... (Hint: examine the disassembly closely and take note of how varibales are ordered on the stack and how the 1st argument to strcpy is being passed. Also, research examples of Write-What-Where in C if you're unfamiliar with the concept or term.)</p>
+                              <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4004</p>
+
+                              <a href="../images/ctf_canary_example4-src.png">Source Code</a><br>
+                              <a href="https://drive.google.com/a/uosec.info/file/d/0BwRJUP-ZgBwsRTY5UWE1c0hEdjQ/view?usp=sharing">Download Binary</a><br>
+                              <form action="checkFlag.php" method="post" name="chal1">
+                                   <!--<label for="chal1_flag">Enter Flag:</label>-->
+                                   <input id="canary4_flag" class="chals" type="text" name="flag" placeholder="Enter Flag" required />
+                                   <input type="hidden" name="chal_flag" value="canary4" />
+                                   <input type="submit" />
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
      <!-- Stack-Based Memory Corruption Modals -->
      <!-- Stack-Based Memory Corruption Buttons -->
      <div class="modal-div" id="NativeChallengeButtons">
@@ -107,6 +132,7 @@
          <button class="snip1535" id="NWBChal1Btn" onclick="openModal(document.getElementById('NWBChal1Modal'))">Canary Example 1<br>10 pts</button>
          <button class="snip1535" id="NWBChal2Btn" onclick="openModal(document.getElementById('NWBChal2Modal'))">Canary Example 2<br>30 pts</button>
          <button class="snip1535" id="NWBChal3Btn" onclick="openModal(document.getElementById('NWBChal3Modal'))">Canary Example 3<br>30 pts</button>
+         <button class="snip1535" id="NWBChal4Btn" onclick="openModal(document.getElementById('NWBChal4Modal'))">Canary Bonus Challenge <br>50 pts</button>
      </div>
      <!-- End Native Whitebox Challenge Buttons -->
      <br><br>
