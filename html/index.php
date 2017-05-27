@@ -33,7 +33,10 @@ $login = new Login();
 if ($login->isUserLoggedIn() == true) {
     // the user is logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are logged in" view.
-    include("views/challenges.php");
+    //include("views/challenges.php");
+    /*TODO: fix include so we dont have to rely on this redirect*/
+    header("Location: https://ctf.uosec.info/views/challenges.php");
+    exit();
 
 } else {
     // the user is not logged in. you can do whatever you want here.
