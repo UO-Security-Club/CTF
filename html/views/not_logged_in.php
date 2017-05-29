@@ -36,6 +36,7 @@ if (isset($login)) {
                     <span class="input-group-addon"><i ></i></span>
                     <input id="login_input_password" class="form-control" type="password" name="user_password" placeholder="Password" autocomplete="off" required />
                 </div>
+		<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
                 <button type="submit" class="float" name="login" value="Login">Login</button>
             </form>
             <form method="GET" action="register.php">

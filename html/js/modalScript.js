@@ -15,3 +15,8 @@ window.onclick = function(event) {
       curModal.style.display = "none";
     }
 }
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);

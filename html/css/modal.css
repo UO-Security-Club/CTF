@@ -45,9 +45,9 @@
 	/*background-color: #005767!important;
 	background: rgb(0, 87, 103); Fall-back for browsers that don't support rgba *
    	background: rgba(0, 87, 103, .1);*/
-	padding: 40px;
+	padding: 50px;
 	/*border-top: 2px solid #A6F1FF;*/
-	border-bottom: 2px solid #A6F1FF;
+	border-bottom: 0.2px solid #A6F1FF;
 }
 
 button{

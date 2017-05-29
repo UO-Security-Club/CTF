@@ -110,6 +110,7 @@
                          <div class="col-lg-12">
                               <h3><b>Canary Example 4 (Bonus Challenge): 50pts</b></h3>
                               <br>
+			      <br><p><b>Goal:</b><br> Bypass the stack canary and jump execution flow to the printFlag() function.</p>
                               <p><b>Description:</b><br> This challenge binary was compiled with gcc's -fstack-protector. In-light of that, we've neglected implementing any bounds checking of user input since the canary should always catch an overflow!... (Hint: examine the disassembly closely and take note of how varibales are ordered on the stack and how the 1st argument to strcpy is being passed. Also, research examples of Write-What-Where in C if you're unfamiliar with the concept or term.)</p>
                               <p><b>Connect to the program remotely with:</b><br> nc 35.160.19.245 4004</p>
 

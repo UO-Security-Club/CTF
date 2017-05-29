@@ -53,12 +53,15 @@ class Login
     private function dologinWithPostData()
     {
         // check login form contents
-        if (empty($_POST['user_name'])) {
+	if (empty($_POST['csrf_token'])) {
+		$this->errors[] = "Empty csrf token.";
+        } elseif (empty($_POST['user_name'])) {
             $this->errors[] = "Username field was empty.";
         } elseif (empty($_POST['user_password'])) {
             $this->errors[] = "Password field was empty.";
-        } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])) {
-
+	} elseif (isset($_POST['csrf_token']) && $_POST['csrf_token'] !== $_SESSION['csrf_token']){
+			$this->errors[] = "Invalid csrf token.";
+        } elseif (!empty($_POST['user_name']) && !empty($_POST['user_password'])){
             // create a database connection, using the constants from config/db.php (which we loaded in index.php)
             $this->db_connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 	    if ($this->db_connection->connect_error) {
@@ -109,7 +112,7 @@ class Login
             }
         }
     }
-
+  
     /**
      * perform the logout
      */
@@ -139,6 +142,9 @@ class Login
             return true;
         }
         // default return
+	elseif (!isset($_SESSION['csrf_token'])) {
+    		$_SESSION['csrf_token'] = base64_encode(openssl_random_pseudo_bytes(32));
+	}
         return false;
     }
 }
